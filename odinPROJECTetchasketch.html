@@ -5,8 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Etch-A-Sketch</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+        }
+
+        .container div {
+            height: auto;
+            background-color: #222;
+            /* margin:8px; */
+            /* padding: 20px; */
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .container{
+            padding: 10px;   
+            height:100%;
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(16, 1fr);
+            grid-template-rows: repeat(16, 1fr);
+        }
+        input {
+            padding: 10px;
+            /* width: 100%; */
+            align-content: center;
+        }
+
+        .input {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+
 </head>
 <body>
+    <div class="input">Enter number of boxes per 
+        row/column<input type="number" min="1"></div>
     <div class="container">
 
     </div>
